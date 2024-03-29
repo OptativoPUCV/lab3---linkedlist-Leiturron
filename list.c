@@ -129,9 +129,10 @@ void * popCurrent(List * list)
       izq->next = der;
       der->prev = izq;
     }
+    void* data = list->current->data;
     free(list->current);
     list->current = NULL;
-    return list->current;
+    return data;
 }
 
 void cleanList(List * list) 
