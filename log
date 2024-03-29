@@ -369,3 +369,17 @@ list.c:114:11: error: unused variable ‘izq’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 dcb681a
+Fri 29 Mar 2024 06:35:24 PM UTC: 
+ list.c | 13 ++++++++-----
+ 1 file changed, 8 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:116:13: error: unused variable ‘izq’ [-Werror=unused-variable]
+  116 |       Node* izq = list->current->prev;
+      |             ^~~
+list.c:120:13: error: unused variable ‘der’ [-Werror=unused-variable]
+  120 |       Node* der = list->current->next;
+      |             ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+de7dba6
