@@ -139,3 +139,9 @@ list.c:88:1: error: expected identifier or ‘(’ before ‘}’ token
       | ^
 Compilation failed
 cb81e13
+Fri 29 Mar 2024 03:11:22 PM UTC: 
+ list.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  9|3
+total_score: 35/70
+34c015e
