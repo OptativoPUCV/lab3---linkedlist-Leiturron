@@ -54,9 +54,9 @@ void * nextList(List * list)
 
 void * lastList(List * list) 
 {
-  Node* aux = firstList(list);
-  while(aux->next != NULL) nextList(list);
-  list->tail = aux;
+  list->current = firstList(list);
+  while(list->current->next != NULL) nextList(list);
+  list->tail = list->current;
   return list->tail->data;
 }
 
