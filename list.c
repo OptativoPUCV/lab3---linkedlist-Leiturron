@@ -56,7 +56,7 @@ void * lastList(List * list)
 {
   list->current = list->head;
   while(list->current->next != NULL) nextList(list);
-  return list->current;
+  return list->current->data;
 }
 
 void * prevList(List * list)
