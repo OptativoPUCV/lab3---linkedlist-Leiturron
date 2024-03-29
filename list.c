@@ -122,7 +122,7 @@ void * popCurrent(List * list)
     else if(list->current == list->tail)
     {
       list->tail = izq;
-      list->head->next = NULL;
+      list->tail->next = NULL;
     }
     else
     {
