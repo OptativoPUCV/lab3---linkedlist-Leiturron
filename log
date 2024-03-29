@@ -383,3 +383,8 @@ list.c:120:13: error: unused variable ‘der’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 de7dba6
+Fri 29 Mar 2024 06:37:39 PM UTC: 
+ list.c | 12 ++++--------
+ 1 file changed, 4 insertions(+), 8 deletions(-)
+ tests:  0|0
+205d1ff
