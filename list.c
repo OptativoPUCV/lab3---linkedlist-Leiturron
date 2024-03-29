@@ -72,10 +72,8 @@ void * prevList(List * list)
 
 void pushFront(List * list, void * data) 
 {
-    Node* aux = (Node *)malloc(sizeof(Node));
-    aux = list->head;
-    while(aux->next != NULL) nextList(list);
-    list->tail = aux;
+    list->tail = list->head;
+    while(list->tail->next != NULL) list->tail = list->tail->next;;
   
     Node* new = createNode(data);
     new->next = list->head;
